@@ -3,49 +3,141 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pindu — Support</title>
-<style>
-  :root { --accent: #4651B0; --bg: #ffffff; --fg: #1a1a1f; --muted: #6b6b76; --card: #f4f4f8; }
-  @media (prefers-color-scheme: dark) {
-    :root { --accent: #A2ABF2; --bg: #121216; --fg: #ececf1; --muted: #9a9aa6; --card: #1e1e26; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-         background: var(--bg); color: var(--fg); line-height: 1.7; }
-  .wrap { max-width: 680px; margin: 0 auto; padding: 56px 24px 80px; }
-  a.back { color: var(--accent); text-decoration: none; font-size: .95rem; }
-  h1 { font-size: 2rem; margin: 24px 0 8px; letter-spacing: -0.02em; }
-  h2 { font-size: 1.15rem; margin: 32px 0 10px; }
-  p { margin: 0 0 18px; }
-  ul { margin: 0 0 18px; padding-left: 20px; }
-  li { margin-bottom: 10px; }
-  a { color: var(--accent); }
-  .contact { background: var(--card); border-radius: 14px; padding: 18px 22px; margin-top: 32px; }
-  .credits { color: var(--muted); font-size: .9rem; }
-</style>
+<title>Pindu Help</title>
+<meta name="description" content="How to use Pindu: reading with the camera, photos and pasted text, hearing words, Closer Look, Traditional and Simplified, Premium, and how to get in touch.">
+<meta name="theme-color" content="#4651B0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121216" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <div class="wrap">
-    <a class="back" href="index.html">← Pindu</a>
-    <h1>Pindu — Support</h1>
-    <p>Pindu shows pinyin and English for Chinese text using your camera, photos, or typed/pasted text. Everything runs on your device.</p>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
 
-    <h2>Getting started</h2>
+  <header class="site-header">
+    <a class="brand" href="./"><img src="assets/img/icon-256.png" alt="" width="30" height="30">Pindu</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="support.html" aria-current="page">Help</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main" class="prose">
+    <h1>Help</h1>
+    <p class="intro">Answers to the questions people ask most. If yours is not here, email <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a>.</p>
+
+    <nav class="toc" aria-label="Questions on this page">
+      <p>On this page</p>
+      <ul>
+        <li><a href="#who">Who is Pindu for?</a></li>
+        <li><a href="#camera">How do I read something with the camera?</a></li>
+        <li><a href="#photo">Can I read a photo or a screenshot?</a></li>
+        <li><a href="#text">Can I paste text?</a></li>
+        <li><a href="#hear">How do I hear a word, or a whole page?</a></li>
+        <li><a href="#colours">What do the pinyin colours mean?</a></li>
+        <li><a href="#closer-look">What is Closer Look?</a></li>
+        <li><a href="#dotted">Why are some characters underlined with dots?</a></li>
+        <li><a href="#fix">Pindu misread a character. Can I fix it?</a></li>
+        <li><a href="#scripts">Does it read Traditional, Simplified, and Zhuyin?</a></li>
+        <li><a href="#premium">What does Premium include, and what does it cost?</a></li>
+        <li><a href="#restore">I reinstalled or got a new phone. Where is my Premium?</a></li>
+        <li><a href="#offline">Does it work offline?</a></li>
+        <li><a href="#voice">The voice sounds wrong, or there is no Chinese voice.</a></li>
+        <li><a href="#devices">Which iPhones does it work on?</a></li>
+        <li><a href="#tour">Is there a guided tour?</a></li>
+        <li><a href="#contact">How do I contact you?</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="who">Who is Pindu for?</h2>
+    <p>People who can already speak Chinese, or enough to get by, but were never taught to read it. Pindu shows you the pinyin and English for the Chinese in front of you: a child's homework, a menu, a church bulletin, a text from family. It is a reading aid, not a course. There are no lessons, flashcards, or accounts.</p>
+
+    <h2 id="camera">How do I read something with the camera?</h2>
+    <p>Open Pindu and point the camera at Chinese text. Pinyin and English appear live as the camera finds lines. Tap the shutter to freeze the page so you can read at your own pace, then tap Resume to go back to the live view.</p>
     <ul>
-      <li><strong>Camera tab:</strong> point at Chinese text to see pinyin and English. Tap any word for its reading, meaning, and to hear it spoken.</li>
-      <li><strong>Text tab:</strong> type or paste Chinese text to read it.</li>
-      <li><strong>Settings</strong> (gear icon) → “How to use” for a guided tour.</li>
+      <li>Pinch to zoom up to 5x, or use the 1x, 2x, and 3x button. The macro button helps with small print held close.</li>
+      <li>Drag the handle between the camera and the reading panel to give either one more room.</li>
+      <li>If the live camera finds nothing, or the result looks garbled, a “Not catching it?” pill offers <a href="#closer-look">Closer Look</a>.</li>
     </ul>
 
-    <h2>Pindu Premium</h2>
-    <p>Pindu Premium (one-time purchase) adds Simplified⇄Traditional conversion, Closer Look (a stronger scan for hard pages), and saved readings with export. Already purchased? Settings → Restore Purchases.</p>
+    <h2 id="photo">Can I read a photo or a screenshot?</h2>
+    <p>Yes, and it is free. Tap the photo icon at the top and pick any picture from your library, including a screenshot of a message. The reading panel works exactly as it does for the camera. Pinch, drag, or double-tap to zoom the picture.</p>
 
-    <div class="contact">
-      Need help? Email <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a> and we'll get back to you.
+    <h2 id="text">Can I paste text?</h2>
+    <p>Yes. Tap the text icon at the top, then paste or type Chinese and tap Read. This is the easiest way to read a message someone sent you.</p>
+
+    <h2 id="hear">How do I hear a word, or a whole page?</h2>
+    <ul>
+      <li><strong>One word:</strong> tap it. A card shows its pinyin and meaning, and the matching English word is underlined in the sentence. Tap the play button to hear the sentence read aloud from that word.</li>
+      <li><strong>One sentence:</strong> tap the play button beside it.</li>
+      <li><strong>The whole page:</strong> tap <kbd>Play all</kbd>. Pindu reads sentence by sentence and highlights the one it is on.</li>
+    </ul>
+    <p>Speech plays even when the ring switch is on silent. Voice and speed are in Settings.</p>
+
+    <h2 id="colours">What do the pinyin colours mean?</h2>
+    <p>Each syllable is coloured by tone, the same scheme many dictionaries use: first tone red, second tone orange, third tone green, fourth tone blue, and the neutral tone grey. If you turn on “Tone changes (sandhi)” in Settings, Pindu also shows how tones shift in natural speech, for example <span class="zh">你好</span> as ní hǎo, with a dotted underline on the changed syllable.</p>
+    <p>Pinyin comes from the word as a whole, not character by character, so <span class="zh">银行</span> reads yín háng and <span class="zh">睡觉</span> reads shuì jiào.</p>
+
+    <h2 id="closer-look">What is Closer Look?</h2>
+    <p>Closer Look is a stronger, slower scan for hard pages: small print, dense or annotated text, tricky photos, and Taiwanese kids' books with Zhuyin (Bopomofo) marks beside the characters. It straightens tilted shots, reads vertical text and two-column pages in the right order, and keeps Zhuyin marks from showing up as stray characters.</p>
+    <p>To use it, <strong>press and hold the shutter for about one second</strong>. A ring fills as you hold and a “Closer Look” label appears. Releasing early just freezes the page as usual. A typical page takes about two seconds.</p>
+    <p>Closer Look is part of <a href="#premium">Pindu Premium</a>. Everyone gets 10 free Closer Looks to try it. A try is only counted when it delivers a result, and Settings shows how many you have left.</p>
+
+    <h2 id="dotted">Why are some characters underlined with dots?</h2>
+    <p>After a Closer Look, a dotted underline marks characters the scan was not sure about, with a hint to check them against the page. It is most useful on homework, where one wrong character matters. You can turn it off under Settings, Reading, “Mark doubtful characters”.</p>
+
+    <h2 id="fix">Pindu misread a character. Can I fix it?</h2>
+    <p>Yes. Tap the word. On a Closer Look page you can see the scan's other guesses for each character and pick one, or type the right one. You can also split a word in two, join two words, or remove a character or a whole word. Each character shows a zoomed crop of the printed original so you can compare. Removed characters stay visible as chips you can tap to restore, and Reset undoes everything in that row. Pinyin, English, and speech follow your fix.</p>
+
+    <h2 id="scripts">Does it read Traditional, Simplified, and Zhuyin?</h2>
+    <p>Pindu reads both Simplified and Traditional characters, and Closer Look handles pages with Zhuyin marks. The first time you open the app it asks “Which Chinese do you mostly read?” That answer only settles short signs where the characters alone cannot tell the script apart. Clear pages are never changed. You can change the answer under Settings, “I mostly read”.</p>
+    <p>Showing a page in the other script, so a Traditional menu reads in Simplified or the reverse, is a <a href="#premium">Premium</a> feature. The conversion is phrase-aware: <span class="zh">头发</span> becomes <span class="zh">頭髮</span>, <span class="zh">发现</span> becomes <span class="zh">發現</span>, and words like <span class="zh">皇后</span> are left alone.</p>
+
+    <h2 id="premium">What does Premium include, and what does it cost?</h2>
+    <p>Pindu Premium is a one-time purchase of US $2.99. There is no subscription. It adds:</p>
+    <ul>
+      <li><strong>Closer Look</strong>, the stronger scan for hard pages, without limit.</li>
+      <li><strong>Simplified and Traditional conversion</strong>, so you can read any page in the script you know.</li>
+      <li><strong>Unlimited saved readings</strong>, with copy, share, and export as plain text.</li>
+    </ul>
+    <p>Everything else is free and stays free: camera, photo, and text reading, pinyin, the dictionary, tap-to-hear, and Play all. Before you buy, you get 10 free Closer Looks and 10 free saves. Those counts last for the life of the phone, so a reinstall does not reset them. If you reach the save limit, your existing saves stay readable and exportable.</p>
+    <p>Purchases are handled by Apple through the App Store. Pindu never sees your payment details.</p>
+
+    <h2 id="restore">I reinstalled or got a new phone. Where is my Premium?</h2>
+    <p>Open Settings in Pindu and tap <kbd>Restore Purchases</kbd>. Make sure the phone is signed in to the same Apple Account you bought Premium with.</p>
+
+    <h2 id="offline">Does it work offline?</h2>
+    <p>Yes. Camera reading, the dictionary, pinyin, and speech all run on the phone, so Pindu works in airplane mode. The one exception: the first time you use English translation, Apple downloads a Chinese to English language pack from Apple. You will see a one-time “Setting up translation” message. If the phone is offline at that moment, a Retry banner appears and translation resumes once you are connected.</p>
+
+    <h2 id="voice">The voice sounds wrong, or there is no Chinese voice.</h2>
+    <p>Pindu uses the Mandarin voices installed on your iPhone. If none is installed, the app explains how to download one instead of reading in an English voice. For a better voice, go to Settings in Pindu and follow the guide to downloading higher-quality Mandarin voices from iOS. You can also pick a voice and a speed there.</p>
+
+    <h2 id="devices">Which iPhones does it work on?</h2>
+    <p>Pindu runs on iPhone with iOS 26 or later. It is iPhone-only and works in portrait. Camera reading, pinyin, the dictionary, and speech work on every supported phone. One extra, the short contextual meaning on the word card (for example <span class="zh">天</span> as “day” or “sky” depending on the sentence), uses on-device Apple Intelligence and only appears on phones that support it.</p>
+
+    <h2 id="tour">Is there a guided tour?</h2>
+    <p>Yes. The first time you open Pindu it walks you through each control. To see it again, go to Settings, About, “How to use Pindu”.</p>
+
+    <h2 id="contact">How do I contact you?</h2>
+    <div class="card">
+      <p>Email <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a>. A description of what you were reading and what went wrong helps a lot. Pindu collects no data, so a screenshot from you is the only way the problem can be seen.</p>
     </div>
 
-    <h2>Credits</h2>
-    <p class="credits">The Zhuyin sample page in our App Store screenshots is set in 字嗨注音標楷 (Zihi Kai Standard Bopomofo) by But Ko, from the <a href="https://github.com/ButTaiwan/bpmfvs">bpmfvs</a> project, licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
-  </div>
+    <p>Credits for the dictionary, the scanning engine, and the fonts used in the screenshots are on the <a href="about.html#credits">About page</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="./">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html">About</a>
+      <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a>
+    </nav>
+    <span>© 2026 Pindu</span>
+  </footer>
+
+</div>
 </body>
 </html>

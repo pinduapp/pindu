@@ -3,40 +3,200 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pindu</title>
-<style>
-  :root { --accent: #4651B0; --bg: #ffffff; --fg: #1a1a1f; --muted: #6b6b76; --card: #f4f4f8; }
-  @media (prefers-color-scheme: dark) {
-    :root { --accent: #A2ABF2; --bg: #121216; --fg: #ececf1; --muted: #9a9aa6; --card: #1e1e26; }
-  }
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-         background: var(--bg); color: var(--fg); line-height: 1.6; }
-  .wrap { max-width: 640px; margin: 0 auto; padding: 64px 24px; }
-  h1 { font-size: 2.4rem; margin: 0 0 8px; letter-spacing: -0.02em; }
-  .tag { color: var(--muted); font-size: 1.1rem; margin: 0 0 40px; }
-  a.card { display: block; text-decoration: none; color: var(--fg); background: var(--card);
-           border-radius: 14px; padding: 20px 22px; margin-bottom: 14px; transition: transform .08s ease; }
-  a.card:hover { transform: translateY(-1px); }
-  a.card .title { font-weight: 600; color: var(--accent); font-size: 1.1rem; }
-  a.card .desc { color: var(--muted); font-size: .95rem; margin-top: 2px; }
-  footer { color: var(--muted); font-size: .9rem; margin-top: 40px; }
-  footer a { color: var(--accent); }
-</style>
+<title>Pindu: read the Chinese you can already speak</title>
+<meta name="description" content="Pindu reads Chinese text through your iPhone camera and shows pinyin above and English below. Tap any word to hear it. Everything runs on your phone.">
+<meta property="og:title" content="Pindu">
+<meta property="og:description" content="You can already speak it. Now you can read it. Pinyin and English for any Chinese text, on your iPhone, entirely on-device.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pinduapp.github.io/pindu/">
+<meta name="theme-color" content="#4651B0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121216" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <div class="wrap">
-    <h1>Pindu</h1>
-    <p class="tag">Pinyin and English for the Chinese text around you — right on your iPhone, entirely on-device.</p>
-    <a class="card" href="privacy.html">
-      <div class="title">Privacy Policy</div>
-      <div class="desc">What Pindu does (and doesn't) do with your data. Spoiler: nothing leaves your device.</div>
-    </a>
-    <a class="card" href="support.html">
-      <div class="title">Support</div>
-      <div class="desc">How to use Pindu, what Premium adds, and how to reach us.</div>
-    </a>
-    <footer>Questions? <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a></footer>
-  </div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+
+  <header class="site-header">
+    <a class="brand" href="./"><img src="assets/img/icon-256.png" alt="" width="30" height="30">Pindu</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="support.html">Help</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div>
+        <h1>You can already speak it.<br><span class="line2">Now you can read it.</span></h1>
+        <p class="lead">Point your iPhone at any Chinese and Pindu shows pinyin above and English below. Tap any word to hear it.</p>
+
+        <!-- HERO BUTTON. Two states live here. Only one should be visible at a time.
+             BEFORE LAUNCH: keep the "pre-launch" block, leave the "launch" block inside this comment.
+             AT LAUNCH: delete the "pre-launch" block, move the "launch" block out of the comment,
+             and replace APP_STORE_URL with the real App Store link. -->
+        <div class="cta cta-prelaunch">
+          <span class="pill">Coming soon to the App Store</span>
+          <p class="note">Want a note when it ships? Email <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a>.</p>
+        </div>
+        <!--
+        <div class="cta cta-launch">
+          <a class="badge" href="APP_STORE_URL"><img src="assets/img/app-store-badge.svg" alt="Download on the App Store"></a>
+          <p class="note">Free on the App Store, for iPhone running iOS 26 or later.</p>
+        </div>
+        -->
+
+        <ul class="hero-points">
+          <li>Works offline</li>
+          <li>No account</li>
+          <li>No ads</li>
+          <li>Nothing collected</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <div class="phone"><img src="assets/img/hero.webp" alt="Pindu reading a storybook page: the Chinese sentence 小兔子在森林里找妈妈 with pinyin above each word and the English translation below" width="720" height="1564"></div>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Features">
+
+      <article class="feature">
+        <div class="feature-text">
+          <p class="eyebrow">Free</p>
+          <h2>Read what's in front of you.</h2>
+          <p>Point the camera at a menu, a worksheet, or a bulletin. Open a screenshot of a relative's message. Or paste text. All three show the same reading: pinyin above, English below, a play button on every line.</p>
+          <ul>
+            <li>Reads Simplified and Traditional characters</li>
+            <li>Pinch to zoom, up to 5x, with a macro lens button for small print</li>
+            <li>Tap the shutter to freeze a page and read at your own pace</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone small"><img src="assets/img/text-input.webp" alt="Pindu's Text tab with a pasted sentence and its pinyin and English reading below" width="720" height="1564" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="feature flip">
+        <div class="feature-text">
+          <p class="eyebrow">Free</p>
+          <h2>Tap a word. Hear it. Know it.</h2>
+          <p>Tap <span class="zh">兔子</span> and you get <span class="py"><span class="t4">tù</span> <span class="t0">zi</span></span>, “rabbit”, and a voice that says it. Play reads the sentence from that word. Play all reads the whole page, one sentence at a time.</p>
+          <ul>
+            <li>Pinyin is coloured by tone and taken from a 125,000-entry dictionary, so <span class="zh">银行</span> reads <span class="py"><span class="t2">yín</span> <span class="t2">háng</span></span>, not <em>xíng</em></li>
+            <li>Hide the English with one tap when you want to read on your own</li>
+            <li>Natural Mandarin voices at the speed you choose</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone small"><img src="assets/img/tap-to-define.webp" alt="The word 兔子 selected on the page, with a card showing tù zi and the meaning rabbit, hare" width="720" height="1564" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-text">
+          <p class="eyebrow premium">Premium · first 10 free</p>
+          <h2>Tricky page? Hold for Closer Look.</h2>
+          <p>Hold the shutter for a stronger scan of small print, dense pages, and Taiwanese kids' books with Zhuyin marks. It reads columns in the right order, straightens tilted shots, and dot-underlines any character it is unsure of so you can check and fix it.</p>
+          <ul>
+            <li>Reads vertical text and two-column pages correctly</li>
+            <li>Tap a doubtful character to see other guesses or type the right one</li>
+            <li>About two seconds for a typical page</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone small"><img src="assets/img/closer-look.webp" alt="A Traditional Chinese worksheet with Zhuyin marks, read by Closer Look into three clean sentences with pinyin and English" width="720" height="1564" loading="lazy"></div>
+        </div>
+      </article>
+
+      <article class="feature flip">
+        <div class="feature-text">
+          <p class="eyebrow premium">Premium</p>
+          <h2>Read it in the script you know.</h2>
+          <p>Switch any page between Simplified and Traditional. The conversion is phrase-aware, so <span class="zh">头发</span> becomes <span class="zh">頭髮</span>, not <span class="zh">頭发</span>, and words like <span class="zh">皇后</span> are left alone.</p>
+        </div>
+        <div class="feature-media">
+          <div class="scripts zh" aria-label="The word for park, 公园 in Simplified and 公園 in Traditional">
+            <span class="label">Simplified</span>
+            <span class="word">公<span class="diff">园</span></span>
+            <span class="arrow" aria-hidden="true">⇅</span>
+            <span class="label">Traditional</span>
+            <span class="word">公<span class="diff">園</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-text">
+          <p class="eyebrow premium">Premium · first 10 free</p>
+          <h2>Keep it. Replay it. Share it.</h2>
+          <p>Save a page and open it later with the pinyin, English, and playback intact. Copy the Chinese, the pinyin, the English, or all three, or share the reading as plain text.</p>
+          <ul>
+            <li>Saved readings stay on your phone, not on a server</li>
+            <li>Swipe to delete when you are done with one</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone small"><img src="assets/img/saved-detail.webp" alt="A saved reading with three sentences, each with pinyin, English, and play and copy buttons" width="720" height="1564" loading="lazy"></div>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="privacy-block">
+      <div class="card">
+        <span class="label-chip">App Store privacy label: Data Not Collected</span>
+        <h2>Nothing leaves your phone.</h2>
+        <p>No account, no ads, no analytics, no server. The camera, the dictionary, the translation, and the voice all run on the iPhone itself, so the app works in airplane mode.</p>
+        <p><a href="privacy.html">Read the privacy policy</a></p>
+      </div>
+    </section>
+
+    <section class="premium-block" id="premium">
+      <h2>Free to read. One purchase for more.</h2>
+      <div class="two-sentences">
+        <p>Camera, photo and text reading, pinyin, the dictionary, speech, and Play all are free, with no limits. Pindu Premium is a one-time purchase of US&nbsp;$2.99, not a subscription, and adds Closer Look, Simplified and Traditional conversion, and unlimited saved readings with export.</p>
+      </div>
+      <div class="plans">
+        <div class="plan card">
+          <h3>Free</h3>
+          <p class="price">No account, no limits on reading</p>
+          <ul>
+            <li>Camera, photo, and pasted text</li>
+            <li>Pinyin and English for every line</li>
+            <li>Tap any word for its meaning and sound</li>
+            <li>Play and Play all</li>
+            <li>10 Closer Looks and 10 saves to try</li>
+          </ul>
+        </div>
+        <div class="plan card featured">
+          <h3>Pindu Premium</h3>
+          <p class="price">One-time purchase, US $2.99. No subscription.</p>
+          <ul>
+            <li>Closer Look, unlimited</li>
+            <li>Simplified and Traditional conversion</li>
+            <li>Unlimited saved readings</li>
+            <li>Export and share as plain text</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Footer">
+      <a href="support.html">Help</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="about.html">About</a>
+      <a href="mailto:hellopindu@gmail.com">hellopindu@gmail.com</a>
+    </nav>
+    <span>© 2026 Pindu</span>
+  </footer>
+
+</div>
 </body>
 </html>
